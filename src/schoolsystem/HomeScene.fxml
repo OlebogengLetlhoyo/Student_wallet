@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right top, #5ff66c, #6ff67a, #7df687, #8af693, #97f69f);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolsystem.FXMLHomeSceneController">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right top, #95ff9e, #69ffef, #9effff, #e2fcff, #ffffff);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="29.0" text="Student Wallet" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="29.0">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane hgap="10.0" layoutX="64.0" layoutY="154.0" prefHeight="376.0" prefWidth="623.0" vgap="10.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="63.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="bursariesButton" contentDisplay="TOP" onAction="#bursaries" prefHeight="232.0" prefWidth="201.0" style="-fx-background-color: linear-gradient(to right top, #00fd16, #00cc17, #039d14, #057010, #06460a);" text="Bursaries" GridPane.columnIndex="2">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CREDIT_CARD" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="aboutButton" contentDisplay="TOP" onAction="#settings" prefHeight="274.0" prefWidth="201.0" style="-fx-background-color: linear-gradient(to right top, #00fd16, #00cc17, #039d14, #057010, #06460a);" text="About" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <FontAwesomeIconView glyphName="INFO_CIRCLE" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="courseButton" contentDisplay="TOP" onAction="#CourseButton" prefHeight="258.0" prefWidth="201.0" style="-fx-background-color: linear-gradient(to right top, #00fd16, #00cc17, #039d14, #057010, #06460a);" text="Course">
+               <graphic>
+                  <FontAwesomeIconView glyphName="GRADUATION_CAP" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="essentialsButton" contentDisplay="TOP" prefHeight="300.0" prefWidth="201.0" style="-fx-background-color: linear-gradient(to right top, #00fd16, #00cc17, #039d14, #057010, #06460a);" text="Essentials" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <FontAwesomeIconView glyphName="TAGS" size="40" />
+               </graphic>
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="residenceButton" contentDisplay="TOP" prefHeight="251.0" prefWidth="201.0" style="-fx-background-color: linear-gradient(to right top, #00fd16, #00cc17, #039d14, #057010, #06460a);" text="Residence" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOME" size="43" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="timetableButton" contentDisplay="TOP" prefHeight="261.0" prefWidth="201.0" style="-fx-background-color: linear-gradient(to right top, #00fd16, #00cc17, #039d14, #057010, #06460a);" text="Timetable" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="43" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

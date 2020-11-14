@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right top, #5ff66c, #6ff67a, #7df687, #8af693, #97f69f);" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolsystem.CourseSceneController">
+    <stylesheets>
+        <URL value="@coursescene.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right top, #95ff9e, #69ffef, #9effff, #e2fcff, #ffffff);">
+         <children>
+            <Button fx:id="backHome" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="45.0" prefWidth="55.0" stylesheets="@tableViewCSS.css">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="30" />
+               </graphic>
+            </Button>
+            <Label layoutX="296.0" layoutY="31.0" prefHeight="32.0" prefWidth="180.0" text="Dashboard">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane hgap="10.0" layoutX="14.0" layoutY="150.0" prefHeight="94.0" prefWidth="726.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" />
+          <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#totalModules" prefHeight="177.0" prefWidth="188.0" style="-fx-background-color: #ffdd00;" text="Total Modules">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <graphic>
+                  <Label contentDisplay="TOP" text="32">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="DistinctionID" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#results" prefHeight="177.0" prefWidth="188.0" style="-fx-background-color: #2ac90a;" text="Total Distinctions" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <graphic>
+                  <Label text="12">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#totalCredits" prefHeight="177.0" prefWidth="188.0" style="-fx-background-color: #ebad98;" text="Total Credits" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <graphic>
+                  <Label text="376">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#coreModule" prefHeight="177.0" prefWidth="188.0" style="-fx-background-color: #ff008c;" text="Core Modules" GridPane.columnIndex="3">
+               <graphic>
+                  <Label text="21">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <Line endX="569.0" layoutX="181.0" layoutY="259.0" startX="-180.0" />
+      <Label layoutX="14.0" layoutY="111.0" text="Academic Year:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="piechartID" labelLineLength="10.0" layoutY="260.0" prefHeight="249.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>

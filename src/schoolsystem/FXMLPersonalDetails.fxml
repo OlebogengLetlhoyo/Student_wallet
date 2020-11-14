@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="616.0" style="-fx-background-color: linear-gradient(to right, #b810d1, #ff008d, #ff4f49, #ff9d00, #d8d81d);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolsystem.FXMLPersonalDetailsController">
+   <children>
+      <Label layoutX="179.0" layoutY="36.0" text="Further details">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="103.0" text="Gender(Male or Female):" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="genderField" alignment="CENTER" layoutX="213.0" layoutY="133.0" promptText="Gender" />
+      <ChoiceBox fx:id="choiceboxCourse" layoutX="24.0" layoutY="218.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="choiceboxAcadem" layoutX="385.0" layoutY="218.0" prefWidth="150.0" />
+      <Label layoutX="74.0" layoutY="186.0" text="Course" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="186.0" text="Academic Year" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="275.0" text="Secret code" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codeField" alignment="CENTER" layoutX="213.0" layoutY="318.0" promptText="Secrete Code" />
+      <JFXButton fx:id="saveButton" layoutX="100.0" layoutY="390.0" prefHeight="37.0" prefWidth="377.0" style="-fx-background-color: #f53d7a;" text="Save " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

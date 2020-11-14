@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right top, #5ff66c, #6ff67a, #7df687, #8af693, #97f69f);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolsystem.FXMLBursariesController">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right top, #95ff9e, #69ffef, #9effff, #e2fcff, #ffffff);">
+         <children>
+            <Button layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="45.0" prefWidth="55.0" stylesheets="@tableViewCSS.css">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="30" />
+               </graphic>
+            </Button>
+            <Label layoutX="310.0" layoutY="29.0" text="Bursaries">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="151.0" text="The Nedbank Bursary Programme aims to fund academically deserving students who do not have financial">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="168.0" text="means to study fulltime towards a first undergraduate degree at a South African public university.">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="14.0" layoutY="103.0" prefHeight="48.0" prefWidth="359.0" text="1. The Nedbank Bursary Fund">
+         <font>
+            <Font name="Arial" size="25.2" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="14.0" layoutY="200.0" text="2. Sasol Bursary Programme">
+         <font>
+            <Font name="Arial" size="25.2" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="14.0" layoutY="234.0" text="The Sasol Bursary programme comprises a comprehensive package that covers both financial as well as">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="251.0" text="developmental support throughout the study period.">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
