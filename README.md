@@ -13,5 +13,7 @@ The Course section contains the following:
 ![Screenshot (61)](https://user-images.githubusercontent.com/47014703/99156589-bfea8880-26ca-11eb-9932-ffefd67e3802.png)
 
 
+
 Settings of the application:
+
 ![Screenshot (62)](https://user-images.githubusercontent.com/47014703/99156625-1061e600-26cb-11eb-8533-3e9427afa0d2.png)
